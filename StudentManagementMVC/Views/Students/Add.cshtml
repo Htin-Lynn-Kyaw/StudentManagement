@@ -1,0 +1,33 @@
+﻿@model StudentManagementMVC.Models.AddStudentViewModel;
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create Student</title>
+</head>
+<body>
+    <h1>Register Student</h1>
+    <form asp-action="Add" asp-controller="Students" method="post">
+        <div>
+            <label asp-for="Name"></label>
+            <input asp-for="Name" class="form-control" type="text"/>
+        </div>
+        <div>
+            <label asp-for="Email"></label>
+            <input asp-for="Email" class="form-control" type="email"/>
+        </div>
+        <div class="form-group">
+            <label asp-for="Phone"></label>
+            <input asp-for="Phone" class="form-control" type="tel"/>
+        </div>
+        <div class="form-group">
+            <label asp-for="Subed"></label>
+            <input asp-for="Subed" type="checkbox" />
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+    </form>
+</body>
+</html>
+
