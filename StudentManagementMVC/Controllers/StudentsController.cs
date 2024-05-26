@@ -75,7 +75,7 @@ namespace StudentManagementMVC.Controllers
                         stu.Subed = reqModel.Subed;
                     };
                     _context.SaveChanges();
-                    return View("AllStudents");
+                    return RedirectToAction("AllStudents");
                 }
             }
             TempData["status"] = true;
